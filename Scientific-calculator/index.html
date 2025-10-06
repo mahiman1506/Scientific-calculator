@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main class="calc" role="application" aria-label="Scientific calculator">
+        <div class="display" id="display">
+            <div class="expr" id="expr" aria-live="polite"></div>
+            <div class="out" id="output">0</div>
+        </div>
+
+
+        <div style="margin-top:10px;display:flex;gap:8px;align-items:center;justify-content:space-between">
+            <div class="toggle">
+                <label style="font-size:13px;color:var(--muted)">Mode</label>
+                <button id="degBtn" class="small fn">DEG</button>
+            </div>
+            <div style="display:flex;gap:8px">
+                <button id="mc" class="small fn">MC</button>
+                <button id="mr" class="small fn">MR</button>
+                <button id="mPlus" class="small fn">M+</button>
+                <button id="mMinus" class="small fn">M-</button>
+            </div>
+        </div>
+
+
+        <div class="row" id="keys"></div>
+
+
+        <div class="footer">
+            <div>Keyboard: numbers, + - * / . Enter =</div>
+            <div id="ver" style="color:var(--muted)">v1.0</div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
